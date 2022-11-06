@@ -1,0 +1,152 @@
+/* General settings */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #1C1C1C;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    color: rgb(7, 7, 7);
+}
+#logo{
+    height: 33.02000045776367px;
+    width: 127px;
+    left: 15px;
+    top: 16px;
+    border-radius: 0px;
+
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+main {
+    max-width: 375px;
+    background: #fff;
+
+}
+.separator {
+    width: 100%;
+    border: .5px solid lightgray;
+}
+.post-separator {
+    width: 100%;
+    border: .5px solid lightgray;
+    margin-bottom: 2em 0;
+}
+
+.container {
+    margin: 0 auto;
+    background: #fff;
+    padding: 1em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+
+}
+
+/* Post user */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.post-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-text {
+    margin-left: 1em;
+}
+.user-name, .likes, span {
+    font-weight: 700;
+    font-size: .9rem;
+}
+.user-location {
+    font-size: .85rem;
+}
+.comment {
+    font-size: .9rem;
+    margin-top: .5em;
+}
+
+/* Post */
+
+.painting-post {
+    max-width: 100%;
+}
+
+/* Icons */
+
+.icons {
+    margin-bottom: .5em;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+
+
+.icon {
+    margin: 0 1em 0 0;
+    align-items: center;
+    
+}
+
+.icon svg {
+    fill: rgb(7,7,7);
+
+}
+
+.red-icon path {
+    fill: rgb(255, 0, 0);
+    stroke: rgb(255, 0, 0);
+}
+
+.reg-icon path {
+    fill: #fff;
+    stroke: rgb(7, 7, 7);
+}
+
+
+
+/* Interaction */
+.icon svg:hover{
+    cursor: pointer;
+    opacity: .5;
+    fill: rgb(143, 143, 143);
+    transition: fill 300ms ease-in-out;
+
+}
